@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 /**
  * 
- * @author Devesh
+ * @author Devesh Kr Rai
  *
  */
 
@@ -22,7 +22,7 @@ public abstract class Basepage {
 	private WebElement Services;
 	@FindBy(xpath="//a[contains(text(),'Events')]")
 	private WebElement Events;
-	@FindBy(linkText="Subscription Plans")
+	@FindBy(xpath="//a[contains(text(),'Subscription Plans ')]")
 	private WebElement SubscriptionPlans;
 	@FindBy(xpath="//a[contains(@href,'https://www.weafricans.com/business-premium-membership-plans')]")
 	private WebElement PremiumPlan;
@@ -30,9 +30,9 @@ public abstract class Basepage {
 	private WebElement SponcerBannerPackage;
 	@FindBy(xpath="//a[contains(@href,'https://www.weafricans.com/business-ads-packages')]")
 	private WebElement BusinessAdsPackage;
-	@FindBy(linkText="Event Ads Package")
+	@FindBy(xpath="//a[contains(text(),'Event Ads Package.')]")
 	private WebElement EventAdsPackage;
-	@FindBy(linkText="https://www.weafricans.com/contact")
+	@FindBy(xpath="//a[contains(text(),'Contact Us')]")
 	private WebElement ContactUs;
 	public Basepage(WebDriver driver) {
 		PageFactory.initElements(driver, this);

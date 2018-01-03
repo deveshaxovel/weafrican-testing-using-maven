@@ -1,4 +1,4 @@
-package com.weafrican.generic;
+	package com.weafrican.generic;
 
 import org.openqa.selenium.WebDriver;
 
